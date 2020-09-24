@@ -360,4 +360,160 @@ svg:hover{
 }
 
 
+			/*helpBlock*/
+/*
+.topmenu {
+	background: red;
+}
 
+.topmenu li {
+	display: inline-block;
+	position: relative;
+	width: 460px;
+}
+
+.topmenu li a {
+	padding: 0 30px;
+	font-weight: bold;
+	color: #003559;
+	text-transform: uppercase;
+	
+}
+
+
+.down::after {
+	content: "\02C5";
+	position: relative;
+	margin-left: 8px;
+	margin-bottom: 8px;
+	width: 14px;
+	height: 7px;
+	transform: rotate(180deg);
+}
+
+
+.submenu {
+	position: absolute;
+	left: 15%;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 5;
+	transform: perspective(600px) rotateX(-90deg);
+	transform-origin: 0% 0%;
+	transition: .6s ease-in-out;
+}
+
+.topmenu>li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+	transform: perspective(600px) rotateX(0deg);
+}
+
+.submenu li a {
+	color: red;
+	font-size: 13px;
+	line-height: 36px;
+	padding: 0 25px;
+	text-decoration: none;
+}
+*/
+
+.topmenu:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.topmenu>li {
+	position: relative;
+}
+
+.topmenu>li>a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #8E96B7;
+	padding: 15px 30px;
+}
+
+.topmenu li a:hover {
+	color: #495274;
+}
+
+.submenu-link:after {
+	content: "\02C5";
+	margin-left: 10px;
+}
+
+.submenu-link:hover:after{
+	margin-top: 5px;
+	position: absolute;
+	transform: rotateX(180deg);
+}
+
+.submenu {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	left: 0;
+	top: 100%;
+	left: 5%;
+	z-index: 5;
+	width: 880px;
+	opacity: 0;
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: .5s ease-in-out;
+}
+
+.submenu a {
+	color: #8D96BD;
+	text-align: left;
+	padding: 12px 15px;
+	font-size: 13px;
+}
+
+
+.topmenu>li:hover .submenu {
+	opacity: 1;
+	transform: scaleY(1);
+	
+}
+
+.btn4 {
+	font-size: 13px;
+	line-height: 16px;
+	color: #A6B6DA;
+	font-weight: bold;
+	border-radius: 2px;
+	padding: 13px 15px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.btn4:hover {
+	color: #3A79FF;
+	background: #D2E1FF;
+	border-radius: 2px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #D8E3FE;
+}
+
+.btn5{
+	background: #4D6CE1;
+	box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+	border-radius: 5px;
+	width: 184px;
+	height: 59px;
+	color: #FFFFFF;
+}
+
+input{
+	background: #EFEFF7;
+	border-radius: 5px;
+	width: 279px;
+	height: 59px;
+	color: #7A85AD;
+	padding-left: 10px;
+}
